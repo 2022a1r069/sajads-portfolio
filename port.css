@@ -1,432 +1,255 @@
-/* Google Font CDN Link */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+<!DOCTYPE html>
+<!-- Website - www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+  
+  <head>
+    <meta charset="UTF-8" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="port.css" />
+    <script src="ppf.js" defer></script>
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  scroll-behavior: smooth;
-}
 
-::-webkit-scrollbar {
-  width: 10px;
-}
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-::-webkit-scrollbar-thumb {
-  background: #6e93f7;
-  border-radius: 12px;
-  transition: all 0.3s ease;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #4070f4;
-}
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+  
+    <!-- Move to up button -->
+    <div class="scroll-button">
+      <a href="#home"><i class="fas fa-arrow-up"></i></a>
+    </div>
+    <!-- navgaition menu -->
+     <nav>
+    <div class="navbar">
+  <div class="logo"><a href="#">Portfolio.</a></div>
 
-html, body {
-  max-width: 100%;
-  overflow-x: hidden;
-  font-family: 'Poppins', sans-serif;
-}
+  <ul class="menu">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
 
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
+  <div class="cancel-btn">
+    <i class="fas fa-times"></i>
+  </div>
 
-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 20px 0;
-  background: #fff;
-  z-index: 999;
-  transition: all 0.3s ease;
-  font-family: 'Ubuntu', sans-serif;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-}
-nav.sticky {
-  background: #4070f4;
-  padding: 13px 0;
-}
-nav .navbar {
-  width: 90%;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-}
-nav .logo a {
-  font-weight: 500;
-  font-size: 35px;
-  color: #4070f4;
-}
-nav.sticky .logo a {
-  color: #fff;
-}
-nav .menu {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-nav .menu li {
-  list-style: none;
-}
-.menu a {
-  font-size: 18px;
-  font-weight: 500;
-  color: #0E2431;
-  padding: 6px 12px;
-  transition: 0.4s;
-}
-.menu a:hover {
-  color: #4070f4;
-}
-nav.sticky .menu a {
-  color: #fff;
-}
-nav.sticky .menu a:hover {
-  color: #FFD700;
-}
-.media-icons a {
-  color: #4070f4;
-  font-size: 18px;
-  margin: 0 6px;
-}
-nav.sticky .media-icons a {
-  color: #fff;
-}
+  
 
-.menu-btn,
-.cancel-btn {
-  position: absolute;
-  right: 20px;
-  top: 20px;
-  font-size: 26px;
-  color: #4070f4;
-  display: none;
-  z-index: 1001;
-  cursor: pointer;
-  transition: 0.3s;
-}
-nav.sticky .menu-btn {
-  color: #fff;
-}
-.menu .cancel-btn {
-  color: #fff;
-}
 
-.scroll-button a {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  color: #fff;
-  background: #4070f4;
-  padding: 7px 12px;
-  font-size: 18px;
-  border-radius: 6px;
-  display: none;
-  box-shadow: rgba(0, 0, 0, 0.15);
-}
+       <div class="media-icons">
+        <!-- social icons -->
+  <a href="https://www.instagram.com/sajad_says/" target="_blank">
+    <i class="fab fa-instagram"></i>
+  </a>
+  <a href="https://wa.me/919149459286" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  <a href="linkedin.com/in/sajad-ahmed-783ab4277" target="_blank">
+    <i class="fab fa-linkedin-in"></i>
+  </a>
+</div>
 
-section {
-  padding-top: 80px;
-}
-section .content {
-  width: 80%;
-  margin: 40px auto;
-}
+      </div>
+      <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+    <!-- Home Section Start -->
+     
+    <section class="home" id="home">
+      <div class="home-content">
+        <div class="text">
+          <div class="text-one">Hello,</div>
+          <div class="text-two">I'm Sajad Ahmed</div>
+          <div class="text-three">Frontend Developer</div>
+          <div class="text-three">If You Think Math's Is Hard Try Web Designing</div>
+          <div class="text-four">From Jammu</div>
+        </div>
+       <div class="button">
+ 
 
-.home {
-  min-height: 100dvh; /* Fixes mobile viewport bug */
-  background: url("images/background.png") no-repeat center/cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  margin: 0;
-  padding: 0;
-  position: relative;
-  z-index: 1;
-}
-.home .home-content {
-  width: 95%;
-  padding: 20px  10px;
-}
-.text-one {
-  font-size: 25px;
-  color: #0E2431;
-}
-.text-two {
-  color: #0E2431;
-  font-size: 75px;
-  font-weight: 600;
-  margin-left: -3px;
-}
-.text-three {
-  font-size: 40px;
-  margin: 5px 0;
-  color: #4070f4;
-}
-.text-four {
-  font-size: 23px;
-  color: #0E2431;
-  margin: 5px 0;
-}
-.button {
-  margin: 14px 0;
-}
-.button button {
-  outline: none;
-  padding: 8px 16px;
-  border-radius: 6px;
-  font-size: 25px;
-  background: #4070f4;
-  color: #fff;
-  border: 2px solid transparent;
-  cursor: pointer;
-  transition: 0.4s;
-  font-weight: 400;
-}
-.button button:hover {
-  border-color: #4070f4;
-  background: #fff;
-  color: #4070f4;
-}
 
-.about .about-details {
-  display: flex;
-  justify-content: center; /* Center content */
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 20px;
-}
+  <a href="https://almashooq.vercel.app" target="_blank">
+    <button class="visit-mashooq">Visit Al Mashooq</button>
+  </a>
+</div>
 
-.about .left, .about .right {
-  flex: 1 1 300px; /* Responsive width without breaking layout */
-  max-width: 500px;
-}
 
-.about .left img {
-  width: 100%;
-  height: auto;
-  border-radius: 12px;
-  object-fit: cover;
-  display: block;         /* Ensure no inline space */
-  margin: 0 auto;         /* Center image if needed */
-}
 
-.topic {
-  font-size: 25px;
-  font-weight: 500;
-  margin-bottom: 10px;
-  color: #0E2431;
-}
+      </div>
+    </section>
+    <!-- About Section Start -->
+     
 
-.about .right p {
-  text-align: justify;
-  color: #0E2431;
-}
+    <section class="about" id="about">
+      <div class="content">
+        <div class="title"><span>About Me</span></div>
+        <div class="about-details">
+          <div class="left">
+            <img src="./imagessajad.jpg" alt="Sajad Ahmed" />
+          </div>
+          <div class="right">
+            <div class="topic">Designing Is My Passion</div>
+            <p>
+               * A passionate<span style="color: #4070f4;"> Frontend Developer</span>  With hands-on experience in HTML, CSS and JavaScript 
+                I enjoy turning creative ideas into responsive and user-friendly websites. <br>
+                <br>
+              * I recently completed a frontend development internship from  <br><span style="color: #4070f4;">NIT Srinagar.</span>
+                I’m always eager to learn, explore new technologies, and grow as a developer<br>
+                <br>
+               * When I’m not coding, you’ll find me playing cricket or riding bikes!
+            </p>
+           <div class="button">
+  <a href="./Sajad_Ahmed_CV.pdf" download>
+    <button>Download CV</button>
+  </a>
+</div>
 
-.title {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 40px;
-}
-.title span {
-  color: #0E2431;
-  font-size: 30px;
-  font-weight: 600;
-  position: relative;
-  padding-bottom: 8px;
-}
-.title span::before,
-.title span::after {
-  content: '';
-  position: absolute;
-  height: 3px;
-  background: #4070f4;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-}
-.title span::after {
-  width: 70%;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: -7px;
-}
-@media (max-width: 600px) {
-  .about .about-details {
-    flex-direction: column;
-    gap: 30px;
-  }
-  .about .left, .about .right {
-    max-width: 100%;
-  }
-}
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- My Skill Section Start -->
+    <!-- Section Tag and Other Div will same where we need to put same CSS -->
 
-@media (max-width: 1000px) {
-  .text-two {
-    font-size: 65px;
-  }
-  .text-three {
-    font-size: 35px;
-  }
-}
-@media (max-width: 750px) {
-  .text-two {
-    font-size: 55px;
-  }
-  .text-three {
-    font-size: 33px;
-  }
-  nav .navbar {
-    width: 90%;
-  }
-}
- /* Google Font CDN Link */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+    
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  scroll-behavior: smooth;
-}
+    <section class="skills" id="skills">
+      <div class="content">
+        <div class="title"><span>My Skills</span></div>
+        <div class="skills-details">
+          <div class="text">
+            <div class="topic">Skills Reflects Our Knowledge</div>
+            <p>I have a strong foundation in frontend web development with hands-on experience in HTML, CSS, and JavaScript.
+             I'm proficient in building responsive and user-friendly interfaces, and
+             I have intermediate knowledge of React.js for creating dynamic web applications. 
+             I’m also familiar with version control using GitHub. 
+             I’m continuously improving my skills through real-world projects, internships, and daily practice.</p>
+            
+          </div>
+          <div class="boxes">
+            <div class="box">
+              <div class="topic">HTML</div>
+              <div class="per">90%</div>
+            </div>
+            <div class="box">
+              <div class="topic">CSS</div>
+              <div class="per">80%</div>
+            </div>
+            <div class="box">
+              <div class="topic">JavScript</div>
+              <div class="per">70%</div>
+            </div>
+            <div class="box">
+              <div class="topic">React.Js</div>
+              <div class="per">50%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- My Services Section Start -->
 
-::-webkit-scrollbar {
-  width: 10px;
-}
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-::-webkit-scrollbar-thumb {
-  background: #6e93f7;
-  border-radius: 12px;
-  transition: all 0.3s ease;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #4070f4;
-}
+    
 
-.button {
-  margin-top: 20px;
-}
+    <section class="services" id="services">
+      <div class="content">
+        <div class="title"><span>My Services</span></div>
+        <div class="boxes">
+          <div class="box">
+            <div class="icon">
+              <i class="fas fa-desktop"></i>
+            </div>
+            <div class="topic">Frontend Development</div>
+            <p>"I develop clean, interactive, and high-performance web interfaces using HTML, CSS, JavaScript, and React."</p>
+          </div>
+          <div class="box">
+            <div class="icon">
+              <i class="fas fa-paint-brush"></i>
+            </div>
+            <div class="topic"> UI/UX Implementation</div>
+            <p>"I turn design mockups into pixel-perfect web experiences, focusing on smooth usability and modern aesthetics."</p>
+          </div>
+          <div class="box">
+            <div class="icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <div class="topic">Portfolio and E-Commerce Websites</div>
+            <p>"I create personal portfolios, e-commerce websites, and product landing pages with engaging layouts and modern functionality."</p>
+          </div>
+          <div class="box">
+            <div class="icon">
+              <i class="fab fa-android"></i>
+            </div>
+            <div class="topic"> Website Redesign</div>
+            <p>"I can refresh old websites with a modern look, improved structure, and mobile-friendly design."</p>
+          </div>
+          <div class="box">
+            <div class="icon">
+              <i class="fas fa-camera-retro"></i>
+            </div>
+            <div class="topic">Photography</div>
+            <p>"I capture high-quality photographs that tell stories — from portraits and events to creative visual content for web and social use."
 
-.button button {
-  padding: 10px 20px;
-  font-size: 1rem;
-  border: none;
-  background-color: #1e40af;
-  color: white;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-}
+</p>
+          </div>
+          <div class="box">
+            <div class="icon">
+              <i class="fas fa-tablet-alt"></i>
+            </div>
+            <div class="topic"> Responsive Web Design</div>
+            <p>"I build fully responsive websites that look great on all devices — from mobile phones to desktops."</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Me section Start -->
 
-.button button:hover {
-  background-color: #162b7a;
-}
+   
 
-.skills-details .box {
-  background: #eff6ff;
-  padding: 20px;
-  border-radius: 8px;
-  text-align: center;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-}
+    <section class="contact" id="contact">
+        <div class="content">
+          <div class="title"><span>Contact Me</span></div>
+          <div class="text">
+            <div class="topic">Looking to Collaborate?</div>
 
-.skills-details .box .topic {
-  font-weight: 600;
-  color: #1e40af;
-  margin-bottom: 10px;
-}
+            <p>Have a project in mind? Whether it's a stunning website or a unique idea, I'm ready to help you bring it to life.
+📲 Let's talk on WhatsApp.</p>
+            <div class="button">
+              <a href="https://wa.me/919149459286" target="_blank" class="whatsapp-btn">
+        <button class="fa fa-whatsapp">Chat on WhatsApp</button> 
+      </a>
+            </div>
+            <!-- Google Map Embed -->
 
-.skills-details .box .per {
-  font-size: 1.8rem;
-  color: #1e40af;
-}
+           
 
-.services .box {
-  padding: 30px;
-  background: #fff;
-  text-align: center;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-  transition: 0.3s ease;
-}
-
-.services .box:hover {
-  background: #1e40af;
-  color: white;
-}
-
-.services .box .icon {
-  font-size: 2rem;
-  margin-bottom: 10px;
-  color: #1e40af;
-}
-
-.services .box:hover .icon {
-  color: white;
-}
-
-.contact .text {
-  text-align: center;
-  color: #333;
-}
-
-.contact iframe {
-  width: 100%;
-  border: none;
-  border-radius: 8px;
-  margin-top: 20px;
-}
-
-footer {
-  background: #1e40af;
-  color: white;
-  text-align: center;
-  padding: 15px 0;
-  font-size: 0.9rem;
-}
-
-footer a {
-  color: white;
-  font-weight: 500;
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
-
-/* Responsive Media Queries */
-@media screen and (max-width: 768px) {
-  .menu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background: #fff;
-    flex-direction: column;
-    align-items: center;
-    display: none;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-  }
-  .menu.active {
-    display: flex;
-  }
-  .menu-btn,
-  .cancel-btn {
-    display: block;
-    font-size: 24px;
-    color: #1e40af;
-  }
-}
+            <div class="map" style="margin: 20px 0;">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3425.132623774478!2d74.83741737464847!3d32.726601888827075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391e84250e16eced%3A0x9ef3c3f9e084ae3f!2sModel%20Institute%20of%20Engineering%20and%20Technology%2C%20Jammu!5e0!3m2!1sen!2sin!4v1682404123456!5m2!1sen!2sin" 
+                width="100%" 
+                height="300" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+      
+            
+          </div>
+        </div>
+      </section>
+      <!-- Footer Section Start -->
+      <footer>
+        <div class="text">
+          <span>Created By <a href="#">Sajad Ahmed</a> |  2025 All Rights Reserved</span>
+        </div>
+      </footer>
+     
+      </body>
+      </html>
+      
