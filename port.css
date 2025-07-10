@@ -70,7 +70,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0px 0px 0px;
+  padding-bottom: 0px;
   position: relative;
   text-align: center;
 }
@@ -88,6 +88,7 @@ nav {
   color: #1e3a8a;
   font-weight: 500;
 }
+
 
 .home-content .text-two {
   font-size: 3rem;
@@ -156,7 +157,9 @@ section {
   font-weight: 600;
   color: #6366f1;
 }
-
+.about {
+  margin-top: 0px;
+}
 .about-details,
 .skills-details,
 .services .boxes {
@@ -300,5 +303,13 @@ footer a:hover {
     display: block;
     font-size: 24px;
     color: #6366f1;
+  }
+}
+@media (max-width :768px){
+  .home{
+    padding: bottom 20px;
+  }
+  .about{
+    margin-top: 0px;
   }
 }
