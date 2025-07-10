@@ -16,11 +16,7 @@ body {
   color: #333;
 }
 
-img {
-  max-width: 100%;
-  display: block;
-  height: auto;
-}
+
 
 nav {
   position: fixed;
@@ -74,7 +70,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 100px 0px 0px;
+  padding: 0px 0px 0px;
   position: relative;
   text-align: center;
 }
