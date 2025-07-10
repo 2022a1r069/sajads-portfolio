@@ -159,6 +159,15 @@ section {
   font-weight: 600;
   color: #6366f1;
 }
+
+.about .left img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  display: block;         /* Ensure no inline space */
+  margin: 0 auto;         /* Center image if needed */
+}
 .about {
   margin-top: 0px;
 }
