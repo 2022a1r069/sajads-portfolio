@@ -65,15 +65,16 @@ nav {
   display: none;
 }
 .home {
-  height: 100vh;
-  height: 100dvh;
+  min-height: 100dvh;
   background: linear-gradient(to right ,#fff ,rgb(26, 148, 230));
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   text-align: center;
+  overflow: hidden;
 }
+
 
 
 .home-content {
